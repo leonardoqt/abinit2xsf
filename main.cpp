@@ -109,10 +109,10 @@ int main()
 	}
 	if (tmp.find(flag_end) == string::npos)
 		cout<<"# Warning, calculation may not fully relaxed"<<endl;
-	cout<<"PRIMCELL"<<endl;
+	cout<<"PRIMVEC"<<endl;
 	for(int t1=0; t1<3; t1++)
 		cout<<setw(14)<<setprecision(9)<<fixed<<X[t1]<<setw(14)<<setprecision(9)<<fixed<<Y[t1]<<setw(14)<<setprecision(9)<<fixed<<Z[t1]<<endl;
-	cout<<"PRIMVEC"<<endl;
+	cout<<"PRIMCOORD"<<endl;
 	cout<<nat<<" 1"<<endl;
 	for(int t1=0; t1<nat; t1++)
 		cout<<setw(2)<<el_l[at_l[t1]]<<setw(14)<<setprecision(9)<<fixed<<x[t1]<<setw(14)<<setprecision(9)<<fixed<<y[t1]<<setw(14)<<setprecision(9)<<fixed<<z[t1]<<endl;
